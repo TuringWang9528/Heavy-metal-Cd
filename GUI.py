@@ -65,10 +65,10 @@ div[class*="stText"], div[class*="stNumberInput"], div[class*="stSelectbox"] {
 # ---------------------- 3. 加载模型 & 定义特征范围 ----------------------
 # 加载XGBoost模型
 try:
-    model = joblib.load('XGB_model.pkl')
+    model = joblib.load('XGBoost.pkl')
     st.success("XGBoost model loaded successfully!")
 except FileNotFoundError:
-    st.error("Model file not found! Ensure 'xgboost_model.pkl' is in the current directory.")
+    st.error("Model file not found! Ensure 'XGBoost.pkl' is in the current directory.")
     st.stop()
     
 feature_ranges = {
