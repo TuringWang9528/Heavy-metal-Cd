@@ -171,7 +171,7 @@ if "pred_results" in st.session_state:
     st.markdown("### Prediction Result")
     
     # 【修改】使用 st.metric 显示回归值
-    st.metric(label="Predicted Value (e.g., Qe(mg/g))", value=f"{res['pred_value']:.4f}")
+    st.metric(label="Predicted Value (Qe(mg/g))", value=f"{res['pred_value']:.4f}")
 
     # 【修改】显示SHAP瀑布图
     st.markdown("### SHAP Waterfall Plot (Feature Contribution)")
